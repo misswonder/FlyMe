@@ -1,18 +1,23 @@
 require_relative '../config/environment'
 
 
+require "tty-prompt"
 
-puts "HELLO WORLD"
+prompt = TTY::Prompt.new
 
-p1= Passenger.find(1)
-p1.ticketed_flights
-p1.tickets
 
-f1 = Flight.find(23)
-f1.tickets
-f1.ticketed_passengers
+puts "HELLO WORLD" 
 
- 
+# # prompt.ask("Hello Welcome to Flight App?", default: ENV["USER"])
+# # prompt.select("Choose your destiny?", %w(Scorpion Kano Jax))
+
+# choices = %w(Flight_Options Book_a_Flight Update_Your_Flight Cancel_a_Flight)
+# prompt.multi_select("Select an Option?", choices)
+
+
+ f1 =  Flight.first
+ p1 = Passenger.first
+ t1 = Ticket.first
 
 
 
