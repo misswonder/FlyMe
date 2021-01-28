@@ -4,7 +4,6 @@ Passenger.destroy_all
 Ticket.destroy_all
 
 
-
 f1 = Flight.create(airline: "Delta Airline", origin: "New York City", destination: "Los Angeles", flight_date_time: "January 30th, 2021, 2:30PM")
 f2 = Flight.create(airline: "American Airline", origin: "Boston", destination: "Seattle", flight_date_time: "February 1st, 2021, 9:00AM")
 f3 = Flight.create(airline: "United Airline", origin: "San Francisco", destination: "Denver", flight_date_time: "January 31st, 2021, 11:30AM")
