@@ -41,4 +41,3 @@ t8 = Ticket.create(flight: f3, passenger: p7, price: 400.00, ticket_number: 1116
 t9 = Ticket.create(flight: f7, passenger: p6, price: 350.00, ticket_number: 11168, flight_status: "Open")
 t10 = Ticket.create(flight: f8, passenger: p8, price: 250.00, ticket_number: 11169, flight_status: "Open")
 t11 = Ticket.create(flight: f9, passenger: p9, price: 350.00, ticket_number: 11170, flight_status: "Open")
-
