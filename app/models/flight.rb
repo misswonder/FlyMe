@@ -1,10 +1,11 @@
 class Flight < ActiveRecord::Base
     
+
     has_many :tickets
     has_many :ticketed_passengers, through: :tickets, source: :passenger
 
-    def self.view_flights_option
-        Flight.all
-    end 
-    
+    def view_flight
+        self.all
+    end
+    # binding.pry
 end
