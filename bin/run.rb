@@ -23,6 +23,7 @@ prompt.select('Are you a New or Returning User?') do |menu|
   menu.choice 'Returning', -> { @current_user = Passenger.returning_user }
 end
 
+
 def select_flight
   
   flights = Flight.all
