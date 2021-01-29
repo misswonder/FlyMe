@@ -28,17 +28,5 @@ namespace :flight do
     ticket = Ticket.find_by(ticket_number: args[:ticket_number])
     puts ticket.price
   end 
-
-  # desc 'cancel a flight'
-  # task :cancelticket, [:ticket_number] do |t, args|
-  #   ticket = Ticket.find_by(ticket_number: args[:ticket_number])
-  #   Ticket.delete(ticket)
-  # end 
-
-  # desc 'update a flight ticket/change a flight'
-  # task :updateticket, [:ticket] do |t, args|
-  # end 
-
-
 end 
 
